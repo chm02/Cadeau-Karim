@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Lait UHT Demi-Écrémé Centrale 1L",
+    "filename": "lait-uht-demi-ecreme-centrale-1l.jpg",
+    "search": "Lait Centrale Demi Ecrémé 1L",
+    "error": "fetch failed"
+  },
+  {
+    "name": "Lait UHT Entier Centrale 1L",
+    "filename": "lait-uht-entier-centrale-1l.jpg",
+    "search": "Lait Centrale Entier 1L",
+    "error": "Aucune source disponible"
+  },
+  {
+    "name": "Lait UHT Écrémé Centrale 1L",
+    "filename": "lait-uht-ecreme-centrale-1l.jpg",
+    "search": "Lait Centrale Ecrémé",
+    "error": "Aucune source disponible"
+  }
+]
