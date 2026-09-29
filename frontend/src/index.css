@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f3f7f5;
+    color: #16221f;
+    overscroll-behavior-y: contain;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.01em;
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button { -webkit-user-select: none; user-select: none; }
+  ::selection { background: rgba(15, 118, 110, 0.2); }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/50;
+  }
+  .glass-dark {
+    @apply bg-neutral-900/60 backdrop-blur-xl border border-white/10 text-white;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold rounded-2xl transition-all duration-200 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-300;
+  }
+  .btn-primary {
+    @apply btn text-white bg-brand-gradient shadow-lg shadow-brand-500/25 hover:shadow-xl hover:shadow-brand-500/35 hover:brightness-105;
+  }
+  .btn-accent {
+    @apply btn text-white bg-accent-gradient shadow-lg shadow-accent-500/30 hover:shadow-xl hover:shadow-accent-500/40 hover:brightness-105;
+  }
+  .btn-ghost {
+    @apply btn text-neutral-800 bg-white border border-neutral-200 hover:bg-neutral-50 hover:border-neutral-300;
+  }
+  .btn-danger {
+    @apply btn text-white bg-gradient-to-r from-red-500 to-rose-600 shadow-lg shadow-red-500/30 hover:shadow-xl;
+  }
+  .card {
+    @apply bg-white rounded-3xl border border-neutral-100 shadow-soft;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-sm font-semibold transition-all duration-200;
+  }
+  .chip-active {
+    @apply chip bg-brand-gradient text-white shadow-md shadow-brand-500/30;
+  }
+  .chip-inactive {
+    @apply chip bg-white border border-neutral-200 text-neutral-700 hover:border-brand-300 hover:text-brand-700;
+  }
+  .input {
+    @apply w-full px-4 py-3 bg-white border border-neutral-200 rounded-2xl text-neutral-900 placeholder:text-neutral-400 outline-none transition focus:border-brand-400 focus:ring-4 focus:ring-brand-100;
+  }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  @media (min-width: 640px) {
+    .product-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1280px) {
+    .product-grid {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+  }
+
+  .skeleton {
+    background: linear-gradient(90deg, #f5f5f4 0%, #e7e5e4 40%, #f5f5f4 80%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s linear infinite;
+  }
+
+  .shop-shell {
+    background:
+      radial-gradient(circle at 8% 4%, rgba(45, 212, 191, 0.18), transparent 24rem),
+      radial-gradient(circle at 94% 18%, rgba(251, 146, 60, 0.14), transparent 22rem),
+      #f3f7f5;
+  }
+
+  .shop-grid-bg {
+    background-image: linear-gradient(rgba(15, 118, 110, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(15, 118, 110, 0.035) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
+
+  .nav-blur {
+    background: rgba(243, 247, 245, 0.82);
+    box-shadow: 0 12px 40px rgba(23, 55, 49, 0.08);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 20px, black calc(100% - 20px), transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, black 20px, black calc(100% - 20px), transparent 100%);
+  }
+}
