@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#fdf4ff"/>
+      <stop offset="100%" stop-color="#fae8ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg6)" rx="16"/>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="196" height="196" fill="none" stroke="#9333ea" stroke-width="1.5" stroke-opacity="0.2" rx="15"/>
+
+  <!-- Icon group -->
+  <g>
+      <!-- chocolate bar -->
+      <rect x="64" y="82" width="72" height="52" rx="8" fill="#7c3aed"/>
+      <line x1="88"  y1="82" x2="88"  y2="134" stroke="#6d28d9" stroke-width="2"/>
+      <line x1="112" y1="82" x2="112" y2="134" stroke="#6d28d9" stroke-width="2"/>
+      <line x1="64"  y1="108" x2="136" y2="108" stroke="#6d28d9" stroke-width="2"/>
+      <!-- cookie -->
+      <circle cx="152" cy="104" r="22" fill="#c084fc" opacity=".85"/>
+      <circle cx="144" cy="97"  r="4" fill="#7c3aed" opacity=".7"/>
+      <circle cx="157" cy="103" r="4" fill="#7c3aed" opacity=".7"/>
+      <circle cx="148" cy="113" r="4" fill="#7c3aed" opacity=".7"/>
+  </g>
+
+  <!-- Category label band -->
+  <rect x="0" y="158" width="200" height="42" rx="0" fill="#9333ea" opacity=".92"/>
+  <rect x="0" y="158" width="200" height="42" rx="0" fill="url(#bg6)" opacity=".1"/>
+
+  <!-- Category name (auto-wrap via 2 lines max) -->
+  <text
+    x="100" y="175"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-size="10"
+    font-weight="600"
+    text-anchor="middle"
+    fill="white"
+    opacity=".95"
+  >Biscuits, Chocolats & </text>
+  <text x="100" y="189" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle" fill="white" opacity=".95">Snacking</text>
+</svg>

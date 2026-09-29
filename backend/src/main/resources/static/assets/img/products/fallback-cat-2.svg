@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#fefce8"/>
+      <stop offset="100%" stop-color="#fef9c3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg2)" rx="16"/>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="196" height="196" fill="none" stroke="#ca8a04" stroke-width="1.5" stroke-opacity="0.2" rx="15"/>
+
+  <!-- Icon group -->
+  <g>
+      <!-- jar -->
+      <rect x="72" y="88" width="56" height="52" rx="8" fill="#ca8a04" opacity=".85"/>
+      <rect x="78" y="80" width="44" height="14" rx="4" fill="#a16207"/>
+      <rect x="84" y="96" width="32" height="10" rx="3" fill="white" opacity=".7"/>
+      <!-- can -->
+      <ellipse cx="148" cy="96" rx="20" ry="8" fill="#d97706"/>
+      <rect x="128" y="96" width="40" height="40" fill="#f59e0b"/>
+      <ellipse cx="148" cy="136" rx="20" ry="8" fill="#d97706"/>
+      <rect x="136" y="105" width="24" height="14" rx="2" fill="white" opacity=".8"/>
+  </g>
+
+  <!-- Category label band -->
+  <rect x="0" y="158" width="200" height="42" rx="0" fill="#ca8a04" opacity=".92"/>
+  <rect x="0" y="158" width="200" height="42" rx="0" fill="url(#bg2)" opacity=".1"/>
+
+  <!-- Category name (auto-wrap via 2 lines max) -->
+  <text
+    x="100" y="175"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-size="10"
+    font-weight="600"
+    text-anchor="middle"
+    fill="white"
+    opacity=".95"
+  >Épicerie Salée & Conse</text>
+  <text x="100" y="189" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle" fill="white" opacity=".95">rves</text>
+</svg>

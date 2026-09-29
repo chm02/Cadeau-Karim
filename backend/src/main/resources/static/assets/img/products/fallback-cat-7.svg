@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg7)" rx="16"/>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="196" height="196" fill="none" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.2" rx="15"/>
+
+  <!-- Icon group -->
+  <g>
+      <!-- coffee cup -->
+      <rect x="72" y="90" width="52" height="46" rx="8" fill="#d97706"/>
+      <path d="M124,104 Q140,104 140,118 Q140,132 124,132" fill="none" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="98" cy="90" rx="26" ry="6" fill="#b45309"/>
+      <!-- steam -->
+      <path d="M88,80 Q90,72 88,65" fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+      <path d="M98,78 Q100,70 98,63" fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+      <path d="M108,80 Q110,72 108,65" fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+      <!-- toast -->
+      <rect x="136" y="86" width="32" height="38" rx="4" fill="#fbbf24"/>
+      <rect x="140" y="90" width="24" height="6"  rx="2" fill="#f59e0b"/>
+  </g>
+
+  <!-- Category label band -->
+  <rect x="0" y="158" width="200" height="42" rx="0" fill="#d97706" opacity=".92"/>
+  <rect x="0" y="158" width="200" height="42" rx="0" fill="url(#bg7)" opacity=".1"/>
+
+  <!-- Category name (auto-wrap via 2 lines max) -->
+  <text
+    x="100" y="175"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-size="10"
+    font-weight="600"
+    text-anchor="middle"
+    fill="white"
+    opacity=".95"
+  >Petit-déjeuner & Tarti</text>
+  <text x="100" y="189" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle" fill="white" opacity=".95">nables</text>
+</svg>

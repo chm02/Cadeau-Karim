@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg9)" rx="16"/>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="196" height="196" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-opacity="0.2" rx="15"/>
+
+  <!-- Icon group -->
+  <g>
+      <!-- cleaning bottle -->
+      <rect x="74" y="86" width="34" height="58" rx="8" fill="#2563eb"/>
+      <rect x="79" y="74" width="24" height="16" rx="5" fill="#1d4ed8"/>
+      <!-- spray nozzle -->
+      <path d="M108,82 L122,78 L122,90 L108,90 Z" fill="#3b82f6"/>
+      <path d="M122,80 Q134,76 136,86" fill="none" stroke="#3b82f6" stroke-width="4" stroke-linecap="round"/>
+      <rect x="80" y="98" width="22" height="12" rx="3" fill="white" opacity=".8"/>
+      <!-- bubbles -->
+      <circle cx="150" cy="100" r="10" fill="#93c5fd" opacity=".6"/>
+      <circle cx="163" cy="112" r="8"  fill="#bfdbfe" opacity=".6"/>
+      <circle cx="152" cy="120" r="6"  fill="#dbeafe" opacity=".7"/>
+  </g>
+
+  <!-- Category label band -->
+  <rect x="0" y="158" width="200" height="42" rx="0" fill="#2563eb" opacity=".92"/>
+  <rect x="0" y="158" width="200" height="42" rx="0" fill="url(#bg9)" opacity=".1"/>
+
+  <!-- Category name (auto-wrap via 2 lines max) -->
+  <text
+    x="100" y="175"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-size="10"
+    font-weight="600"
+    text-anchor="middle"
+    fill="white"
+    opacity=".95"
+  >Entretien & Maison</text>
+  
+</svg>
